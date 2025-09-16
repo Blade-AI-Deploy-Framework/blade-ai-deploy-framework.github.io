@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+
+				<!-- Primary Meta Tags -->
+				<meta name="title" content="No Model Is an Island: Enabling Adversarial Attacks on Neural Network Pipeline at Binary Level">
+				<meta name="description" content="BLADE: A novel framework for adversarial attacks on real-world AI applications at binary level, bypassing authentication in commercial systems">
+				<meta name="keywords" content="adversarial attacks, binary analysis, AI security, neural networks, BLADE, application security, face authentication">
+				<!--   <meta name="author" content="Authors"> -->
+				<meta name="robots" content="index, follow">
+				<meta name="language" content="English">
+
+				<!-- Open Graph / Facebook -->
+				<meta property="og:type" content="article">
+				<meta property="og:site_name" content="BLADE Research">
+				<meta property="og:title" content="No Model Is an Island: Enabling Adversarial Attacks on Neural Network Pipeline at Binary Level">
+
+				<!-- Preconnect for performance -->
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link rel="preconnect" href="https://ajax.googleapis.com">
+				<link rel="preconnect" href="https://documentcloud.adobe.com">
+				<link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+				<title>BLADE: Binary-Level Adversarial Example Generation | Academic Research</title>
+
+				<!-- Favicon and App Icons -->
+				<link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+				<link rel="apple-touch-icon" href="static/images/favicon.ico">
+
+				<!-- Critical CSS - Load synchronously -->
+				<link rel="stylesheet" href="static/css/bulma.min.css">
+				<link rel="stylesheet" href="static/css/index.css">
+
+				<!-- Non-critical CSS - Load asynchronously -->
+				<link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+				<link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+				<link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+				<link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+				<!-- Fallback for browsers that don't support preload -->
+				<noscript>
+						<link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+						<link rel="stylesheet" href="static/css/bulma-slider.min.css">
+						<link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+						<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+				</noscript>
+
+				<!-- Fonts - Optimized loading -->
+				<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+				<!-- Defer non-critical JavaScript -->
+				<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				<script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+				<script defer src="static/js/fontawesome.all.min.js"></script>
+				<script defer src="static/js/bulma-carousel.min.js"></script>
+				<script defer src="static/js/bulma-slider.min.js"></script>
+				<script defer src="static/js/index.js"></script>
+		</head>
+
+		<body>
+				<!-- Scroll to Top Button -->
+				<button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+						<i class="fas fa-chevron-up"></i>
+				</button>
+
+				<main id="main-content">
+						<section class="hero">
+								<div class="hero-body">
+										<div class="container is-max-desktop">
+												<div class="columns is-centered">
+														<div class="column has-text-centered">
+																<h1 class="title is-1 publication-title">No Model Is an Island: Enabling Adversarial Attacks on Neural Network Pipeline at Binary Level</h1>
+
+																<div class="column has-text-centered">
+																		<div class="publication-links">
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</section>
+
+
+
+						<!-- Paper abstract -->
+						<section class="section hero is-light">
+								<div class="container is-max-desktop">
+										<div class="columns is-centered has-text-centered">
+												<div class="column is-four-fifths">
+														<h2 class="title is-3">Abstract</h2>
+														<div class="content has-text-justified">
+																<p>
+																AI models have been widely integrated into critical real-world applications, powering object detection in autonomous vehicles, hand tracking in VR/AR devices, biometric authentication in smartphones, and etc. While extensive research has demonstrated the vulnerability of AI models, including adversarial attacks, poisoning attacks, and membership inferences attacks, a significant gap remains in understanding how these attacks translate to deployed systems. In practice, AI models are embedded within complex application logic and compiled into binaries, creating additional challenges that invalidate assumptions made by existing model-oriented attacks.
+																</p>
+																<p>
+																To address this gap, we present BLADE (Binary-Level ADversarial Example Generation), a novel framework that combines static and dynamic analysis to automatically assess and exploit AI models in real-world AI applications. Different from previous approaches that target models themselves, BLADE directly analyzes real-world compiled binary applications, taking both application contexts and model integration logic into account. We comprehensively evaluated BLADE on 48 binary AI applications across diverse domains, model inference engines, and compilers, demonstrating its ability to efficiently generate adversarial examples that can successfully bypass the application authentication logic. To validate the real-world impact of BLADE, we conducted end-to-end case studies against major commercial Android face authentication SDKs, successfully bypassing authentication in all cases. Our research proposes a systematic method to end-to-end apply adversarial attacks on real-world applications, highlighting the urgent need for robust defenses at the application level.
+																</p>
+														</div>
+												</div>
+										</div>
+								</div>
+						</section>
+						<!-- End paper abstract -->
+
+						<footer class="footer">
+								<div class="container">
+										<div class="columns is-centered">
+												<div class="column is-8">
+														<div class="content">
+
+																<p>
+																This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+																You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+																		Commons Attribution-ShareAlike 4.0 International License</a>.
+																</p>
+
+														</div>
+												</div>
+										</div>
+								</div>
+						</footer>
+
+						<!-- Statcounter tracking code -->
+
+						<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+						<!-- End of Statcounter Code -->
+
+		</body>
+</html>
