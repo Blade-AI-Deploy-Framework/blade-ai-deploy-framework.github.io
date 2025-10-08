@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/face-scan.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLADE</title>
+  </head>
+  <body class="flex flex-col p-4 items-center">
+    <div class="flex flex-col items-center w-full">
+      <div class="prose w-full pb-8">
+        <div class="flex flex-col">
+          <div class="flex self-center items-center mt-4">
+            <img src="/face-scan.svg" class="w-[10rem] h-[10rem]" />
+            <h1 class="text-center text-5xl leading-[1.125] font-semibold">
+              No Model Is an Island: Enabling Adversarial Attacks on Neural
+              Network Pipeline at Binary Level
+            </h1>
+          </div>
+        </div>
+        <div class="max-w-[54rem] mx-auto">
+          <pre><code>Anonymous</code></pre>
+          <!-- <p class="text-center text-xl mt-0 mb-0 leading-[1.5]">
+            * indicates equal contribution.
+          </p> -->
+          <div class="not-prose p-4 flex justify-center gap-1 flex-wrap">
+            <a href="https://example.com" class="page-button" target="_blank">
+              <div class="button-icon">
+                <img src="/pdf.svg" class="size-[1rem]" />
+              </div>
+              Paper</a
+            >
+            <a
+              href="https://github.com/Blade-AI-Deploy-Framework/blade"
+              class="page-button"
+              target="_blank"
+            >
+              <div class="button-icon">
+                <img src="/github.svg" class="size-[1rem]" />
+              </div>
+              Code</a
+            >
+            <a
+              href="https://github.com/Blade-AI-Deploy-Framework/model_deploy_execution_dataset"
+              class="page-button"
+              target="_blank"
+            >
+              <div class="button-icon">
+                <img src="/dataset.svg" class="size-[1rem]" />
+              </div>
+              Dataset</a
+            >
+            <a
+              href="https://github.com/Blade-AI-Deploy-Framework/all_experiment"
+              class="page-button"
+              target="_blank"
+            >
+              <div class="button-icon">
+                <img src="/flask.svg" class="size-[1rem]" />
+              </div>
+              Experiment</a
+            >
+          </div>
+          <div class="text-noto text-justify">
+            <h2 class="text-center text-4xl">Abstract</h2>
+            <p class="text-lg">
+              AI models have been widely integrated into critical real-world
+              applications, powering object detection in autonomous vehicles,
+              hand tracking in VR/AR devices, biometric authentication in
+              smartphones, and etc. While extensive research has demonstrated
+              the vulnerability of AI models, including adversarial attacks,
+              poisoning attacks, and membership inferences attacks, a
+              significant gap remains in understanding how these attacks
+              translate to deployed systems. In practice, AI models are embedded
+              within complex application logic and compiled into binaries,
+              creating additional challenges that invalidate assumptions made by
+              existing model-oriented attacks.
+            </p>
+            <p class="text-lg">
+              To address this gap, we present BLADE (<b>B</b>inary-<b>L</b>evel
+              <b>AD</b>versarial <b>E</b>xample Generation), a novel framework
+              that combines static and dynamic analysis to automatically assess
+              and exploit AI models in real-world AI applications. Different
+              from previous approaches that target models themselves, BLADE
+              directly analyzes real-world compiled binary applications, taking
+              both application contexts and model integration logic into
+              account. We comprehensively evaluated BLADE on 48 binary AI
+              applications across diverse domains, model inference engines, and
+              compilers, demonstrating its ability to efficiently generate
+              adversarial examples that can successfully bypass the application
+              authentication logic. To validate the real-world impact of BLADE,
+              we conducted end-to-end case studies against major commercial
+              Android face authentication SDKs, successfully bypassing
+              authentication in all cases. Our research proposes a systematic
+              method to end-to-end apply adversarial attacks on real-world
+              applications, highlighting the urgent need for robust defenses at
+              the application level.
+            </p>
+            <div
+              class="flex flex-col md:flex-row gap-4 justify-center items-center"
+            >
+              <img src="/blade_overview_page.jpg" class="h-[28rem]" />
+              <img src="/moti_face_auth_page.jpg" class="h-[28rem]" />
+            </div>
+            <video controls muted preload playsinline width="100%">
+              <source src="/file_example_MP4_1280_10MG.mp4" type="video/mp4" />
+            </video>
+            <h2>BibTex</h2>
+            <pre><code>TODO</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

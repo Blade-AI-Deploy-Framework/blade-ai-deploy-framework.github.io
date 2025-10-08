@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.prose a {
+  text-decoration: none;
+  /* color: #1c88e6; */
+}
+.prose a:hover {
+  /* text-decoration: underline; */
+}
+.prose {
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+}
+.prose b {
+  color: #bb0000;
+  font-weight: 600;
+}
+.prose {
+  @apply max-w-5xl;
+}
+.prose pre {
+  background: #f5f5f5;
+  color: currentColor;
+}
+.text-noto {
+  font-family: "Noto Sans", sans-serif;
+}
+
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+.page-button {
+  @apply rounded-full bg-[#333333] flex items-center h-[40px] pl-4 pr-5 text-white hover:cursor-pointer no-underline hover:no-underline;
+}
+.button-icon {
+  @apply size-[1.5rem] inline-flex justify-center items-center mr-1;
+}
